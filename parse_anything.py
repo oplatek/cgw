@@ -32,7 +32,7 @@ with open("Vocab.gr") as vocabf:
 
 S2_file = sys.argv[2]
 with open(S2_file, "wt") as g:
-    g.write("1    S2    S2 S2\n")
-    g.write("1    S2    S2\n")
+    g.write("1    S2    N N\n")
+    g.write("1    S2    N\n")
     for t in terminals:
-        g.write(f"1    S2 {t}\n")
+        g.write(f"1    N {t}\n")
