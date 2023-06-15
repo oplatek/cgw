@@ -53,6 +53,7 @@ S2_file = sys.argv[3]
 with open(S2_file, "wt") as g:
     g.write("50  TOP  S1\n")
     g.write("50   TOP  S2\n")
+    g.write("1    S2    N\n"
     for i, sentence_words in enumerate(filtered_sentences):
         g.write(f"1   S1    EXAMPLE_SENTENCE_{i}_0\n")
         for j, w in enumerate(sentence_words):
