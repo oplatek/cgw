@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.9
 """
 Could be used as
-  python3.9 sentence2grammar.py example_sentences.txt filtered.txt S2_new.gr ; cat S2_new.gr
+  python3.9 sentence2grammar.py example_sentences.txt filtered.txt S1_new.gr ; cat S1_new.gr
 """
 import sys
 non_terminals = set([])
@@ -46,15 +46,15 @@ with open(out_filtered_file, "wt") as w:
             w.write(line)
             w.write("\n")
         else:
-            print(f"WARNING {unknown_words=}")
+            print(f"WARNING {unknown_words}")
 
 
 S2_file = sys.argv[3]
 with open(S2_file, "wt") as g:
-    g.write("99  TOP  S1\n")
-    g.write("1   TOP  S2\n")
+    g.write("50  TOP  S1\n")
+    g.write("50   TOP  S2\n")
     for i, sentence_words in enumerate(filtered_sentences):
-        g.write(f"1   S2    EXAMPLE_SENTENCE_{i}_0\n")
+        g.write(f"1   S1    EXAMPLE_SENTENCE_{i}_0\n")
         for j, w in enumerate(sentence_words):
             if j + 1 < len(sentence_words):
                 g.write(f"1     EXAMPLE_SENTENCE_{i}_{j}    {w} EXAMPLE_SENTENCE_{i}_{j+1}\n")
