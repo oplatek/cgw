@@ -1,0 +1,460 @@
+# This is a hand-generated set of preterminal rules.
+# It specifies a simple tag set which will be handled by the S2
+# grammar and which can (though doesn't necessarily need to be)
+# handled by the S1 grammar.
+#
+# The weights given here may be changed, but no new vocabulary
+# items are to be added.
+
+# Miscellaneous items that don't fit into any of our simple tags are
+# given to Misc.  You will want to develop your own tags for these!
+
+# Punctuations
+1   N    .
+
+# Singular and mass nouns.  Notice that only the
+# ones that start with consonants get our Noun tag.
+1    N    castle
+1    N    king
+1    N    defeater
+1    N    sovereign
+1    N    servant
+1    N    corner
+1    N    land
+1    N    quest
+1    N    chalice
+1    N    master
+1    N    horse
+1    N    fruit
+1    N    swallow
+1    N    sun
+1    N    winter
+1    N    coconut
+1    N    pound
+1    N    husk
+1    N    home
+1    N    weight
+1    N    story
+
+# Determiners.
+1    N    a
+1    N    another
+1    N    any
+1    N    each
+1    N    every
+1    N    no
+1    N    that
+1    N    the
+1    N    this
+
+# Prepositions.
+1    N    above
+1    N    across
+1    N    at
+1    N    below
+1    N    by
+1    N    for
+1    N    from
+1    N    into
+1    N    near
+1    N    of
+1    N    on
+1    N    over
+1    N    through
+1    N    with
+
+# Proper nouns.  Note that our Proper tag is just for people.
+1    N    Arthur
+1    N    Guinevere
+1    N    _Sir _Lancelot
+1    N    _Sir _Bedevere
+1    N    _Sir _Knight
+1    N    Zoot
+1    N    Dingo
+1    N    Patsy
+1    N    _Uther _Pendragon
+1    N      Sir
+1    N Lancelot
+1    N Bedevere
+1    N    Uther
+1    N Pendragon
+1    N   Knight
+
+# Verbs (third person singular present).
+# Note that only transitive verbs get our VerbT tag,
+# and some of those could also function as intransitives!
+1    N    has
+1    N    covers
+1    N    is
+1    N    drinks
+1    N    carries
+1    N    rides
+
+# End-of-sentence.
+1    N    !
+1    N    .
+1    N    ?
+
+# Pauses.
+1    N    ,
+1    N    ...
+1    N    --
+1    N    ;
+1    N    :
+
+# Coordinating conjunctions.
+1    N    and
+1    N    but
+1    N    or
+1    N    either
+1    N    nor
+1    N    neither
+1    N    so
+
+# Numbers.
+1    N    eight
+1    N    five
+1    N    one
+1    N    5.5
+1    N    sixty
+1    N    5,000
+
+# Expletive.
+1    N    there
+
+# Subordinating conjunctions.
+1    N    that
+1    N    so
+1    N    while
+1    N    because
+1    N    if
+
+# Modals.
+1    N    can
+1    N    could
+1    N    may
+1    N    might
+1    N    must
+1    N    ought
+1    N    shall
+1    N    should
+1    N    will
+1    N    would
+
+
+# Adjectives.
+1    N    bloody
+1    N    weary
+1    N    unable
+1    N    trusty
+1    N    further
+1    N    sacred
+1    N    tropical
+1    N    indigenous
+1    N    temperate
+1    N    hot
+1    N    lucky
+1    N    simple
+1    N    tiny
+1    N    hard
+1    N    sensational
+1    N    comparable
+1    N    angolian
+1    N    yellow
+1    N    plodding
+
+# Comparative adjectives.
+1    N    bloodier
+1    N    wearier
+1    N    trustier
+1    N    hotter
+1    N    simpler
+1    N    tinier
+1    N    harder
+
+# Superlative adjectives.
+1    N    bloodiest
+1    N    weariest
+1    N    trustiest
+1    N    hottest
+1    N    simplest
+1    N    tiniest
+1    N    hardest
+
+# Plural nouns.
+1    N    coconuts
+1    N    halves
+1    N    snows
+1    N    mountains
+1    N    areas
+1    N    strangers
+1    N    inches
+1    N    snakes
+1    N    ants
+1    N    nights
+
+# More proper nouns, not people.
+
+1    N    Camelot
+1    N    England
+1    N    _Holy _Grail
+1    N   Holy
+1    N  Grail
+1    N    _Round _Table
+1    N  Round
+1    N  Table
+
+# Plural proper nouns.
+1    N    Britons
+1    N    Saxons
+
+# Personal pronouns.
+1    N    I
+1    N    he
+1    N    her
+1    N    him
+1    N    it
+1    N    one
+1    N    she
+1    N    them
+1    N    they
+
+
+# Possessive personal pronouns
+1    N    her
+1    N    his
+1    N    its
+1    N    their
+
+# Adverbs.
+1    N    again
+1    N    already
+1    N    currently
+1    N    frequently
+1    N    precisely
+1    N    south
+1    N    successfully
+1    N    unfortunately
+
+# 'do'/'does'
+1    N    do
+1    N    does
+
+# 'to'
+1    N    to
+
+# 'not'
+1    N    not
+
+# Verbs (base form).
+1    N    have
+1    N    speak
+1    N    cover
+1    N    be
+1    N    ride
+1    N    drink
+1    N    grow
+1    N    carry
+1    N    suggest
+1    N    migrate
+1    N    know
+
+# Verbs (past tense).
+1    N    had
+1    N    spoke
+1    N    covered
+1    N    was
+1    N    were
+1    N    rode
+1    N    drank
+1    N    grew
+1    N    carried
+1    N    suggested
+1    N    migrated
+1    N    knew
+
+# Verbs (present participles).
+1    N    having
+1    N    speaking
+1    N    covering
+1    N    being
+1    N    riding
+1    N    drinking
+1    N    growing
+1    N    carrying
+1    N    suggesting
+1    N    migrating
+1    N    knowing
+
+# Verbs (past participle).
+1    N    had
+1    N    spoken
+1    N    covered
+1    N    been
+1    N    ridden
+1    N    drunk
+1    N    grown
+1    N    carried
+1    N    suggested
+1    N    migrated
+1    N    known
+
+# More third person singular verbs.
+1    N    speaks
+1    N    grows
+1    N    goes
+1    N    migrates
+1    N    suggests
+1    N    knows
+
+# Verbs (present, plural, third person).
+1    N    have
+1    N    speak
+1    N    cover
+1    N    are
+1    N    ride
+1    N    drink
+1    N    grow
+1    N    carry
+1    N    suggest
+1    N    migrate
+1    N    know
+
+# Wh-determiners.
+1    N    that
+1    N    what
+1    N    which
+
+# Wh-pronouns.
+1    N    what
+1    N    who
+
+# Wh possessive pronoun.
+1    N    whose
+
+# Wh-adverbs
+1    N    how
+1    N    when
+1    N    where
+1    N    why
+
+
+# Possessive marker.
+1    N    's
+
+# Some additional words from Monty Python
+1    N    'd
+1    N    'll
+1    N    'm
+1    N    'ow
+1    N    're
+1    N    Arthur-king
+1    N    English
+1    N    God
+1    N    King
+1    N    Quest
+1    N    ah
+1    N    all
+1    N    am
+1    N    an
+1    N    anarcho-syndicalist
+1    N    anyone
+1    N    around
+1    N    away
+1    N    become
+1    N    bink
+1    N    bite
+1    N    biweekly
+1    N    bleed
+1    N    blow
+1    N    burn
+1    N    call
+1    N    charged
+1    N    come
+1    N    commune
+1    N    dead
+1    N    decisions
+1    N    dictatorship
+1    N    did
+1    N    draw
+1    N    emperor
+1    N    feel
+1    N    fight
+1    N    fooling
+1    N    found
+1    N    go
+1    N    going
+1    N    happy
+1    N    help
+1    N    in
+1    N    inherent
+1    N    just
+1    N    knnnniggets
+1    N    legs
+1    N    let
+1    N    living
+1    N    lobbed
+1    N    loony
+1    N    man
+1    N    many
+1    N    me
+1    N    mean
+1    N    meeting
+1    N    men
+1    N    mine
+1    N    moistened
+1    N    mother
+1    N    move
+1    N    my
+1    N    none
+1    N    nose
+1    N    now
+1    N    off
+1    N    officer
+1    N    oh
+1    N    old
+1    N    order
+1    N    other
+1    N    pansy
+1    N    pass
+1    N    peasant
+1    N    person
+1    N    place
+1    N    pull
+1    N    purpose
+1    N    put
+1    N    quiet
+1    N    ratified
+1    N    repressed
+1    N    right
+1    N    run
+1    N    sayin'
+1    N    scimitar
+1    N    second
+1    N    see
+1    N    seven
+1    N    silly
+1    N    so-called
+1    N    some
+1    N    special
+1    N    strange
+1    N    strength
+1    N    system
+1    N    taunt
+1    N    tell
+1    N    then
+1    N    thirty
+1    N    thought
+1    N    thppppt
+1    N    time-a
+1    N    victory
+1    N    violence
+1    N    we
+1    N    well
+1    N    went
+1    N    witch
+1    N    with
+1    N    y'
+1    N    you
+1    N    your
+1    N    yourself
